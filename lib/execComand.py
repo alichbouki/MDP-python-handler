@@ -1,4 +1,5 @@
 from lib.addAccount import *
+from lib.loadAccount import *
 
 from sys import argv as terminal
 
@@ -11,3 +12,7 @@ class execComand:
         if self.command == "addAccount":
             do = addAccount()
             do.add(self.value)
+
+        elif self.command == "loadAccount":
+            do = loadAccount()
+            do.load(self.value)
